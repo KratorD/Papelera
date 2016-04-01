@@ -1,0 +1,22 @@
+<!--[*  $Id: Papelera_admin_modifyconfig.htm 23981 2012-02-08 10:37:07Z krator $  *]-->
+
+<!--[include file="Papelera_admin_menu.htm"]-->
+
+<h2><!--[gt text="Modify configuration"]--></h2>
+
+<form name="fichaMapa" method="post" action="<!--[pnmodurl modname="Papelera" type="admin" func="updateconfig"]-->">
+<fieldset>
+    <legend><!--[gt text="Module settings"]--></legend>
+
+	<div class="z-formrow">
+		<strong><!--[gt text="Items per page"]--></strong>&nbsp;<input name="txtitemsperpage" type="text" id="txtitemsperpage" size="50" value="<!--[$itemsperpage]-->">
+		<p class="z-formnote z-informationmsg"><!--[gt text="Number of elements showed for page"]--></p>
+	</div>
+
+</fieldset>
+
+<div class="z-formbuttons">
+	<input type="submit" name="Submit" value="<!--[gt text="Submit"]-->">
+</div>
+
+</form>

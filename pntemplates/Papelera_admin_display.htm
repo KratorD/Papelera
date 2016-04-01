@@ -1,0 +1,77 @@
+<!--[* $Id: Papelera_admin_display.htm 31 2012-02-07 Krator $ &nbsp; *]-->
+
+<!--[include file="Papelera_admin_menu.htm"]-->
+
+	<div class="z-admincontainer">
+	  <div class="z-adminpageicon"><!--[pnimg modname=core src=lists.gif set=icons/large __alt="Admin Records" altml=true]--></div>
+	  <h2><!--[gt text="Admin Records"]--></h2>
+	  <p align="center"><!--[gt text="Display Record"]--></p>
+
+	<!--[* Registro *]-->
+	<br>
+	<div class="contdisplay" id="contdisplay" align="center">
+		<!--[* Cabecera tabla MODULO, FECHA, USUARIO *]-->
+		<div class="colModulo" id="colModulo">
+			<div class="contCabecera" id="contCabecera">
+				<!--[gt text="Module"]-->
+			</div>
+		</div>
+		<div class="colFecha" id="colFecha">
+			<div class="contCabecera" id="contCabecera">
+				<!--[gt text="Date"]-->
+			</div>
+		</div>
+		<div class="colUsuario" id="colUsuario">
+			<div class="contCabecera" id="contCabecera">
+				<!--[gt text="User"]-->
+			</div>
+		</div>
+		
+		<!--[* Contenido tabla MODULO, FECHA, USUARIO *]-->
+		<div class="colModulo" id="colModulo">
+			<a href="<!--[pnmodurl modname=$record.Modulo type="admin" func="main"]-->"><!--[ $record.Modulo|pnvarprepfordisplay ]--></a>
+		</div>
+		<div class="colFecha" id="colFecha">
+			<!--[ $record.Fecha|pndate_format ]-->
+		</div>
+		<div class="colUsuario" id="colUsuario">
+			<a href="<!--[pnmodurl modname="Profile" type="user" func="view" uname=$record.Usuario]-->"><!--[ $record.Usuario|pnvarprepfordisplay ]--></a>
+		</div>
+		
+		<!--[* Contenido tabla REGISTRO *]-->
+		<div class="colRecord" id="colRecord">
+			<!--[gt text="Record"]-->
+		</div>
+		<div class="contRecord" id="contRecord">
+			<!--[foreach from=$columnas item=columna name=conV ]-->
+				<!--[ $columna|pnvarprepfordisplay ]--><br>
+			<!--[/foreach]-->
+		</div>
+		
+		<!--[* Botonera *]-->
+		<br>
+		<div class="btnRevertir" id="btnRevertir">
+			<div align="center">
+				<a href="<!--[pnmodurl modname="Papelera" type="admin" func="restart" id=$record.ID]-->">
+				<!--[pnimg modname=core src=agt_reload.gif set=icons/medium __alt="Restart Record" __title="Restart Record"]-->
+				</a>
+			</div>
+		</div>
+		<div class="btnBorrar" id="btnBorrar">
+			<div align="center">
+				<a href="<!--[pnmodurl modname="Papelera" type="admin" func="delete" id=$record.ID]-->">
+				<!--[pnimg modname=core src=editdelete.gif set=icons/medium __alt="Remove Record" __title="Remove Record"]-->
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="blankblock" class="blankblock"><br><br></div>
+	
+	<div align="center">
+		<a href="javascript:history.back()"><!--[gt text="Go Back"]--></a>
+	</div>
+	
+	<div id="blankblock" class="blankblock"><br><br></div>
+	
+</div>

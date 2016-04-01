@@ -1,0 +1,194 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zikula 1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-02-08 05:58-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: pnadmin.php:83
+msgid "Error! Record not found."
+msgstr ""
+
+#: pnadmin.php:131 pnadmin.php:177
+msgid "Error! The record not exists."
+msgstr ""
+
+#: pnadmin.php:136
+msgid "Record deleted sucessfully."
+msgstr ""
+
+#: pnadmin.php:139
+msgid "Error! The record was not deleted."
+msgstr ""
+
+#: pnadmin.php:184
+msgid "Record recover sucessfully."
+msgstr ""
+
+#: pnadmin.php:187
+msgid "Error! The record was not recover."
+msgstr ""
+
+#: pnadmin.php:237
+msgid "Done! Module configuration updated."
+msgstr ""
+
+#: pnadminapi.php:105 pnadminapi.php:142
+msgid "No such item found."
+msgstr ""
+
+#: pnadminapi.php:109
+msgid "Error! Deletion attempt failed."
+msgstr ""
+
+#: pninit.php:40
+msgid "Error! Could not update table."
+msgstr ""
+
+#: pnversion.php:14 pnversion.php:15
+msgid "Papelera"
+msgstr ""
+
+#: pnversion.php:17
+msgid "Store of records deleted"
+msgstr ""
+
+#: pntemplates/Papelera_admin_delete.htm:6
+#: pntemplates/Papelera_admin_restart.htm:6
+msgid "Record Administration"
+msgstr ""
+
+#: pntemplates/Papelera_admin_delete.htm:7
+msgid "Delete record"
+msgstr ""
+
+#: pntemplates/Papelera_admin_delete.htm:14
+msgid "Do you want delete this record?"
+msgstr ""
+
+#: pntemplates/Papelera_admin_delete.htm:15
+msgid "Caution! This action will delete the record forever."
+msgstr ""
+
+#: pntemplates/Papelera_admin_delete.htm:18
+#: pntemplates/Papelera_admin_restart.htm:17
+msgid "Confirm"
+msgstr ""
+
+#: pntemplates/Papelera_admin_delete.htm:19
+#: pntemplates/Papelera_admin_restart.htm:18
+msgid "Cancel"
+msgstr ""
+
+#: pntemplates/Papelera_admin_display.htm:6
+#: pntemplates/Papelera_admin_display.htm:7
+msgid "Admin Records"
+msgstr ""
+
+#: pntemplates/Papelera_admin_display.htm:8
+#: pntemplates/Papelera_admin_view.htm:33
+msgid "Display Record"
+msgstr ""
+
+#: pntemplates/Papelera_admin_display.htm:16
+msgid "Module"
+msgstr ""
+
+#: pntemplates/Papelera_admin_display.htm:21
+#: pntemplates/Papelera_admin_view.htm:16
+msgid "Date"
+msgstr ""
+
+#: pntemplates/Papelera_admin_display.htm:26
+#: pntemplates/Papelera_admin_view.htm:17
+msgid "User"
+msgstr ""
+
+#: pntemplates/Papelera_admin_display.htm:43
+#: pntemplates/Papelera_admin_view.htm:18
+msgid "Record"
+msgstr ""
+
+#: pntemplates/Papelera_admin_display.htm:56
+#: pntemplates/Papelera_admin_view.htm:37
+msgid "Restart Record"
+msgstr ""
+
+#: pntemplates/Papelera_admin_display.htm:63
+msgid "Remove Record"
+msgstr ""
+
+#: pntemplates/Papelera_admin_display.htm:72
+msgid "Go Back"
+msgstr ""
+
+#: pntemplates/Papelera_admin_menu.htm:4
+msgid "Bin administration"
+msgstr ""
+
+#: pntemplates/Papelera_admin_menu.htm:6
+msgid "Principal"
+msgstr ""
+
+#: pntemplates/Papelera_admin_menu.htm:9
+msgid "Configuration"
+msgstr ""
+
+#: pntemplates/Papelera_admin_modifyconfig.htm:5
+msgid "Modify configuration"
+msgstr ""
+
+#: pntemplates/Papelera_admin_modifyconfig.htm:9
+msgid "Module settings"
+msgstr ""
+
+#: pntemplates/Papelera_admin_modifyconfig.htm:12
+msgid "Items per page"
+msgstr ""
+
+#: pntemplates/Papelera_admin_modifyconfig.htm:13
+msgid "Number of elements showed for page"
+msgstr ""
+
+#: pntemplates/Papelera_admin_modifyconfig.htm:19
+msgid "Submit"
+msgstr ""
+
+#: pntemplates/Papelera_admin_restart.htm:7
+msgid "Restart record"
+msgstr ""
+
+#: pntemplates/Papelera_admin_restart.htm:14
+msgid "Do you want recover this record?"
+msgstr ""
+
+#: pntemplates/Papelera_admin_view.htm:7 pntemplates/Papelera_admin_view.htm:8
+msgid "Admin Bin"
+msgstr ""
+
+#: pntemplates/Papelera_admin_view.htm:9
+msgid "List of records deleted from other modules"
+msgstr ""
+
+#: pntemplates/Papelera_admin_view.htm:15
+msgid "Module name"
+msgstr ""
+
+#: pntemplates/Papelera_admin_view.htm:41
+msgid "Delete Record"
+msgstr ""
+
+#: pntemplates/Papelera_admin_view.htm:45
+msgid "No items found."
+msgstr ""

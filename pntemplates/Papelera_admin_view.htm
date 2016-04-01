@@ -1,0 +1,50 @@
+<!--[* $Id: Papalera_admin_main.htm 31 2012-02-07 20:55:41Z Krator $ *]-->
+
+<!--[include file="Papelera_admin_menu.htm"]-->
+<!--[*pnpageaddvar name="javascript" value="modules/Papelera/pnjavascript/Papelera.js"*]-->
+
+<div class="z-admincontainer">
+  <div class="z-adminpageicon"><!--[pnimg modname=core src=lists.gif set=icons/large __alt="Admin Bin" altml=true]--></div>
+  <h2><!--[gt text="Admin Bin"]--></h2>
+  <p align="center"><!--[gt text="List of records deleted from other modules"]--></p>
+    
+<!--[* Listado registros *]-->
+	<table class="z-admintable">
+		<thead>
+			<tr>
+				<th><div align="center"><strong><!--[gt text="Module name"]--></strong></div></th>
+				<th><div align="center"><strong><!--[gt text="Date"]--></strong></div></th>			
+				<th><div align="center"><strong><!--[gt text="User"]--></strong></div></th>
+				<th><div align="center"><strong><!--[gt text="Record"]--></strong></div></th>
+				<th><div align="center"></div></th>
+				<th><div align="center"></div></th>
+				<th><div align="center"></div></th>
+			</tr>
+		</thead>
+		<tbody>
+			<!--[section name=record loop=$listado]-->
+			<tr class="<!--[cycle values="z-odd,z-even"]-->">
+				<td><a href="<!--[pnmodurl modname=$listado[record].Modulo type="admin" func="main"]-->"><!--[ $listado[record].Modulo|pnvarprepfordisplay ]--></a></td>
+				<td><!--[ $listado[record].Fecha|pndate_format ]--></td>
+				<td><a href="<!--[pnmodurl modname="Profile" type="user" func="view" uname=$listado[record].Usuario]-->"><!--[ $listado[record].Usuario|pnvarprepfordisplay ]--></a></td>
+				<td><!--[ $listado[record].Registro|pnvarprepfordisplay|truncate:60 ]--></td>
+				<td><div align="center">
+					<a href="<!--[pnmodurl modname="Papelera" type="admin" func="display" id=$listado[record].ID]-->">
+					<!--[pnimg modname=core src=14_layer_visible.gif set=icons/extrasmall __title="Display Record" altml=true]-->				
+				</div></td>
+				<td><div align="center">
+					<a href="<!--[pnmodurl modname="Papelera" type="admin" func="restart" id=$listado[record].ID]-->">
+					<!--[pnimg modname=core src=agt_reload.gif set=icons/extrasmall __alt="Restart Record" __title="Restart Record"]--></a>
+				</div></td>
+				<td><div align="center">
+					<a href="<!--[pnmodurl modname="Papelera" type="admin" func="delete" id=$listado[record].ID]-->">
+					<!--[pnimg src=icon_delete.png width=16 height=16 __title="Delete Record"]-->
+				</div></td>
+			</tr>
+			<!--[sectionelse]-->
+            <tr class="z-admintableempty"><td colspan="2"><!--[gt text="No items found."]--></td></tr>
+            <!--[/section]-->
+		</tbody>
+	</table>
+	
+</div>
